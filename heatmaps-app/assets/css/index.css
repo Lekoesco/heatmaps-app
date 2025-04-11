@@ -1,0 +1,132 @@
+
+/* === Βασικά === */
+* {
+    box-sizing: border-box;
+  }
+  
+  body.heatmap-ui {
+    background: url('https://plus.unsplash.com/premium_photo-1663088923485-58685ba14d5f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f0f0f0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* === Κεντρικό Container === */
+  .auth-container {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* === Glassmorphism === */
+  .auth-box {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 50px;
+    text-align: center;
+    border-radius: 18px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* === Κείμενα === */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+    color: #00bcd4;
+    margin-top: 25px;
+  }
+  
+  p {
+    font-size: 15.5px;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+  
+  /* === Λίστα Χαρακτηριστικών === */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 30px 0;
+  }
+  
+  .feature-box {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    transition: background 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    background: rgba(255,255,255,0.08);
+  }
+  
+  .feature-box h3 {
+    color: #00bcd4;
+    margin-bottom: 8px;
+  }
+  
+  /* === Κουμπιά === */
+  .btn-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-light {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00bcd4, #007b8a);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+  }
+  
+  .btn-light:hover {
+    background: linear-gradient(135deg, #00a5b8, #006b78);
+    transform: scale(1.04);
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .features {
+      grid-template-columns: 1fr;
+    }
+  
+    .auth-box {
+      padding: 30px 20px;
+    }
+  }
+  
+  /* === Εφέ === */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

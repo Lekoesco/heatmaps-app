@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body.heatmap-ui {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?q=80&w=1770&auto=format&fit=crop') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.auth-container {
+  width: 100%;
+  max-width: 460px;
+  padding: 30px;
+}
+
+.auth-box {
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  padding: 32px;
+  animation: fadeIn 0.6s ease-out;
+  color: #f0f0f0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.input-wrap {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  border: 1px solid #444;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input:focus {
+  border-color: #00bcd4;
+  outline: none;
+  background-color: #2a2a2a;
+}
+
+.btn-light {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00bcd4, #007b8a);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-light:hover {
+  background: linear-gradient(135deg, #00a5b8, #006b78);
+  transform: scale(1.02);
+}
+
+.extra-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.extra-link a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
